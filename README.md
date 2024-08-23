@@ -86,9 +86,133 @@
       - Operational Expenditures (OpEx): Cloud model. Consumption-based. Pay for only what you need right now.
         - Pay as you go.
 
-- CLOUD SERVICES TYPES:
+- CLOUD SERVICE TYPES:
+  - "As a service" branding:
+    - IaaS: Infrastructure as a Service.
+      - Cloud vendor is responsible for physical management of all the hardware.
+      - Greater customization and control. Pay for what you allocate. More management overhead.
+    - PaaS: Platform as a Service.
+      - Cloud vendor is responsible for physical hardware and its software.
+      - Development tools, database management.
+      - Prepackaged cloud services. Emphasis on application development.
+      - Pay for what you use. Less management overhead.
+    - SaaS: Software as a Service.
+      - Cloud vendor is responsible for physical hardware and its software.
+      - Development tools, database management. And hosted applications.
+      - Ready-to-use applications. Focus on end-user experience.
+      - Minimal management overhead.
+    - Varying levels of flexibility and responsibility.
+  - Core cloud service types:
+    1. IaaS: Infrastructure as a Service.
+      - Most fundamental and base. Building block? VMs.
+      - Cloud vendor is responsible for physical aspects.
+      - "Pay-as-you-go managed IT infrastructure."
+        - Provisioned and managed over the Internet.
+        - Fundamental building block of all other cloud services.
+        - VMs. Networking. O/S.
+          - VM: A virtual version of a physical computer. (Infrastructure.)
+            - CPU/Memory. Disk. Networking. O/S. Network controls (Firewall.)
+            - Physical server. Hypervisor. Vendor managed. Hyper-V. VMware.
+            - You do not interact with the physical server. You manage a single VM.
+            - Run any computer software. Maximum control and flexibility. Provision instantly.
+            - More control. More responsibility. 
+              - Software/OS updates. User management. Network access.
+    2. PaaS: Platform as a Service.
+      - Vast majority. 
+      - Cloud vendor manage the underlying O/S and a variety of DEV tools, dB, and business analytics.
+      - "Managed development/deployment (and prepackaged) services."
+      - Develop applications/solutions without managing infrastructure.
+      - Cloud vendor focuses on infrastructure. You focus on developing solutions.
+      - Terminology: "Fully managed." Less management overhead. Including licensing.
+        - Software development. Web App deployment. Storage services. Business Analytics.
+      - Serverless: Extreme PaaS! All resource management is taken away from the customer.
+        - Just run code. From a pricing model you are not being changed for idle resources.
+        - Azure functions = serverless.
+      - Trade-offs:
+        - Less control over the infrastructure.
+        - Cannot make all of the decisions at the infrastructure level.
+        - Prepackaged configurations. Limited choice of tools.
+        - Application compatibility.
+    3. SaaS: Software as a Service.
+      - Most are familiar with.
+      - Vendor responsibilities. And hosts the applications for the end user.
+      - "A cloud-based application." Applications hosted/accessed over the Internet.
+      - e.g.: Email. CRMs. Zoom. Salesforce. Slack.
+      - Customer responsible for: 
+        - Accounts and identities. Device management. Information and data. (Access control.)
+      - SaaS applications are powered by IaaS/PaaS services.
+      - Complete software solution: Ready-to-go software. Easy scaling. Pre-configured.
+        - Accessed over Internet. Subscription model.
+      - "Cloud-based software accessed over the Internet."
+  - Defense in Depth:
+    - Seven layers. Objective: Slow or stop unauthorized data access with layered defense.
+      1. Physical security. Building and associated hardware access.
+      2. Identity and access: Securing identities. Access to what is needed.
+      3. Perimeter: Protect network-based attacks. DDoS. Firewall.
+      4. Network: Secure connectivity between resources. Deny traffic by default.
+      5. Compute: Secure VM. Endpoint protection. O/S? patching.
+      6. Application. Resolve vulnerabilities. Secure secrets. Design for security.
+      7. Data. Primary target. Databases. Disks. SaaS applications. Control access.
+  - Exam tips:
+    - IaaS: Managed infrastructure/VMs. CPU/RAM/OS/networking.
+      - Full control: O/S management. User access.
+    - PaaS: Fully managed cloud solutions.
+      - Vendor handles infrastructure. You focus on developing solutions.
+      - Serverless = zero resource management.
+    - SaaS: Ready-to-go, cloud-based software. Accessed over the Internet.
+      - Hosting. Scaling. Subscription model.
+    - Defend your data with layers of defense.
 
 - CLOUD BENEFITS:
+  - Benefits beyond simply using "someone else's computer."
+  - Do things better and faster.
+    1. High availability and scalability:
+      - High ability to allow a computer system running even if disrupted.
+        - Downtime is bad for business. Introduce redundancy.
+          - Extra servers require time and money.
+        - Cloud provides easy availability. More servers. No hardware failures.
+        - Clustered. Load-balanced.
+        - Cloud vendor provides uptime guarantee for underlying service. (SLA.)
+      - Scaling to increase resources to meet demand.
+        - Cloud-scaling. Instantly and automatically adjusting resources.
+          - And position servers closer to traffic.
+          - Horizontal versus vertical scaling:
+            - Horizontal: Scale out: Adding additional VMs. Load balancer. Typical cloud model.
+            - Vertical: Scale up. Increase compute resources on existing VMs.
+              - Manual. Requires downtime or reboot.
+    2. Reliability and predictability:
+      - Reliability recover from failures and disasters and continue to function.
+        - Ensure that there is no single point of failure. Decentralized design.
+        - Deploy to multiple locations. Global-scale computing. 
+          - Protects against regional failures.
+      - Predictability: 
+        - Predictable performance. Consistent, all of the time.
+          - Regardless of demand and customer location. Ensure enough resources.
+          - Plan deployment around cloud-native best practices.
+        - Predictable costs: Accurately track and forecast costs.
+          - Real-time cost tracking. Pricing calculators. Analytics to optimize.
+    3. Security, governance and manageability:
+      - Security: Provide levels of security. e.g.: IaaS allows full control.
+        - Network controls: DDoS protection. Fine-grained network access tools.
+      - Governance: Standards and compliance enforcement.
+        - Encryption standards. Location restrictions. Meet corporate/government standards.
+          - Auditing tools. Automated patching. Minimum level of security.
+      - Manageability:
+        - "Of" the cloud and "In" the cloud.
+          - "Of:" Control cloud resources. Monitoring. Autoscaling.
+          - "In:" How you interact. Variety of interaction tools.
+  - Exam tips:
+    - Broader themes: Automation + instantly available resources.
+      - Automatically create instantly available resources.
+    - Decentralize critical infrastructure. Global distribution, automatic failover.
+    - Describe each benefit within the AZ-900 exam. And name the specific benefit for each.
+    - High availability means systems are always available. Even automatically.
+    - Scalability refers to scaling out or scaling up while automatically providing resources as needed.
+    - Reliability describes how Azure can tolerate failures or even disasters.
+    - Predictability is knowing your application will always perform as expected and knowing what it will cost.
+    - Security is having full control of your cloud security posture.
+    - Governance is standardizing cloud deployments to meet requirements/standards.
+    - Manageability is control of cloud resources and how we interact with them.
 
 - CONCLUSION:
-
+  - Next steps: AZ-900: Identity, Deployment, and Management.
