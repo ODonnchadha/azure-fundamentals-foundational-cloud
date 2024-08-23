@@ -43,20 +43,52 @@
         - Your own hardware. High upfront cost.
         - More responsibility. In charge of hardware.
         - Less flexible compared to public cloud.
-        - Similiar to a tradition on-premises setup.
+        - Similar to a tradition on-premises setup.
     - Public cloud:
-      - A cloud for everyone. No unfront investment. Hosted by third-party.
+      - A cloud for everyone. No upfront investment. Hosted by third-party.
         - Much more flexibility. Vendor is responsible for hardware.
-        - Shared tenancy wiht other users. (With exceptions.)
+        - Shared tenancy with other users. (With exceptions.)
     - Hybrid cloud:
       - The best of both worlds. Private connectivity. (VPN. ExpressRoute.)
       - Run workloads in the most appropriate location.
       - Skills needed to maintain both.
       - Also, multi-cloud. Workloads in Azure & AWS.
       - Azure Arc. Extend Azure management to non-Azure resources.
+    - Economy of cloud computing:
+      - Capital expenditures: 
+        - Investments in long-term assets. Fixed assets. Land. Buildings.
+        - Large, up-front investments. Physical infrastructure. Servers. Datacenters.
+        - Forecast long-term needs. Large tax deduction.
+      - Operational Expenditures: Ongoing expenses for business operations.
+        - Little or no up-front. Cloud model. Ongoing costs. No upfront investments.
+        - No need to forecast long-term needs and value.
+      - Cloud model = consumption-based. Pay based upon immediate usage.
+        - low usage = low costs. Can increase resources if needed.
+  - Exam Tips: Describing cloud computing:
+    - The cloud is: 
+      - On-demand delivery of compute services over the Internet.
+      - Compute, networking, storage, databases, and software.
+      - Flexibility is a key advantage.
+    - Shared responsibility model:
+      - Ongoing, foundational topic.
+      - Separation of responsibility between cloud vendor and customer.
+      - Different cloud service models have different breakdowns of responsibilities.
+        - Divisions of responsibility.
+    - Cloud models:
+      - Private cloud: Single customer. Similar to a datacenter. Not available to the public.
+        - Maintenance and up-front cost.
+      - Public cloud: Available to anyone. Azure, AWS, etc. Greater flexibility.
+      - Hybrid cloud: Most flexibility. Connect public cloud with private workloads.
+        - More complexity.
+    - Expense models:
+      - Capital Expenditures (CapEx): Purchase servers upfront. Forecast long-term needs/value.
+        - Large up-front investments.
+      - Operational Expenditures (OpEx): Cloud model. Consumption-based. Pay for only what you need right now.
+        - Pay as you go.
 
 - CLOUD SERVICES TYPES:
 
 - CLOUD BENEFITS:
 
 - CONCLUSION:
+
